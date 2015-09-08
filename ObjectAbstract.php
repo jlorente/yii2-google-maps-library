@@ -143,7 +143,7 @@ abstract class ObjectAbstract extends Object
             return new JsExpression($value->getJs());
         } elseif (is_bool($value)) {
             return new JsExpression(($value ? 'true' : 'false'));
-        } elseif (is_array($value)) {
+        } elseif (is_array($value) && !isset($value[0])) {
             $parsed = [];
             foreach ($value as $child) {
                 $parsed[] = $this->encode($child);
