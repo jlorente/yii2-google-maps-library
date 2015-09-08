@@ -1,5 +1,5 @@
 {
-    "name": "2amigos/yii2-google-maps-library",
+    "name": "jlorente/yii2-google-maps-library",
     "description": "Google Maps API library for Yii2.",
     "keywords": ["yii", "extension", "library", "google", "maps"],
     "type": "yii-extension",
