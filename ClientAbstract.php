@@ -7,7 +7,7 @@
 namespace dosamigos\google\maps;
 
 use Yii;
-use yii\base\Object;
+use yii\base\BaseObject;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Client as HttpClient;
 
@@ -21,7 +21,7 @@ use GuzzleHttp\Client as HttpClient;
  * @link http://www.2amigos.us/
  * @package dosamigos\google\maps
  */
-abstract class ClientAbstract extends Object
+abstract class ClientAbstract extends BaseObject
 {
     /**
      * @var string response format. Can be json or xml.
